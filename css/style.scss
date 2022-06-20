@@ -1,0 +1,131 @@
+@charset "UTF-8";
+@import "./scss/variables";
+@import "./scss/base";
+
+
+header {
+
+    h1 {
+        font-family: $fonte-destaque;
+        font-size: 3em;
+    }
+
+    p {
+        font-family: $fonte-padrao;
+        padding-top: 20px;
+        max-width: 500px;
+        margin: auto;
+    }
+}
+
+nav {
+
+    a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        font-weight: bold;
+        transition: 0.4s;
+
+        &:hover {
+            background-color: $cor3;
+            color: $cor5;
+        }
+    }
+
+}
+
+main {
+
+    p {
+        font-family: $fonte-padrao;
+        margin: 10px 0px;
+        text-align: justify;
+        text-indent: 30px;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        color: $cor5;
+        background-color: $cor1;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    h1 {
+        font-family: $fonte-android;
+        color: $cor5;
+    }
+
+    h2 {
+        font-family: $fonte-android;
+        font-size: 1.3em;
+        color: $cor4;
+        background-image: linear-gradient(to right, $cor1, transparent);
+    }
+}
+
+img {
+    width: 100%;
+}
+
+.img-pq {
+    display: block;
+    margin: auto;
+    max-width: 300px;
+}
+
+div {
+
+    &.video {
+        background-color: $cor5;
+        padding: 20px;
+        margin: 30px 0px;
+        padding-bottom: 58%;
+        position: relative;
+    }
+
+    iframe {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 90%;
+    }
+}
+
+aside {
+
+    h3 {
+        background-color: $cor5;
+        color: white;
+        padding: 5px;
+        margin: -10px -10px 0px -10px;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    >ul {
+        list-style-position: inside;
+        columns: 2;
+        padding: 20px;
+    }
+}
+
+footer {
+
+    a {
+        background-color: $cor4;
+        text-decoration: none;
+        color: $cor2;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
